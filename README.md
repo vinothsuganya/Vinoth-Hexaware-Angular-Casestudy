@@ -1,6 +1,10 @@
-# Casestudy
+# Angular Casestudy
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.25.
+
+# Json
+use comment json-server --watch Project.json for access local json file
+Project.json placed in data folder.
 
 ## Development server
 
