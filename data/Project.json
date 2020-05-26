@@ -1,0 +1,109 @@
+{
+  "doctorsList": [
+    {
+      "docId": "101",
+      "docName": "Raghav",
+      "docEmail": "raghav@gmail.com",
+      "docContact": "123456789",
+      "docSpecial": "Cardiology"
+    },
+    {
+      "docId": "102",
+      "docName": "Ragul",
+      "docEmail": "ragul@gmail.com",
+      "docContact": "9187652548",
+      "docSpecial": "Neurology"
+    },
+    {
+      "docId": "103",
+      "docName": "Pradeesh",
+      "docEmail": "pradeesh@gmail.com",
+      "docContact": "123456789",
+      "docSpecial": "Orthopedagogy"
+    },
+    {
+      "docId": "104",
+      "docName": "Thareesh",
+      "docEmail": "thareesh@gmail.com",
+      "docContact": "9186652548",
+      "docSpecial": "Ophthalmology"
+    },
+    {
+      "docId": "105",
+      "docName": "Suganya",
+      "docEmail": "suganya@gmail.com",
+      "docContact": "9100652548",
+      "docSpecial": "Urogynecology"
+    },
+    {
+      "docId": "106",
+      "docName": "Vikesh",
+      "docEmail": "viknesh@gmail.com",
+      "docContact": "9100699548",
+      "docSpecial": "Pulmonology"
+    },
+    {
+      "docId": "107",
+      "docName": "Saravanan",
+      "docEmail": "saravanan@gmail.com",
+      "docContact": "123456789",
+      "docSpecial": "Cardiology"
+    }
+  ],
+  "patientHistoryList": [
+    {
+      "id": "101",
+      "patientName": "Madhavan",
+      "patientContact": "123456789",
+      "docName": "Raghav",
+      "docSpecial": "Cardiology",
+      "appoinmnetDate": "2020-05-24"
+    },
+    {
+      "id": "102",
+      "patientName": "Deepak",
+      "patientContact": "123456789",
+      "docName": "Ragul",
+      "docSpecial": "Neurology",
+      "appoinmnetDate": "2020-05-30"
+    },
+    {
+      "id": "103",
+      "patientName": "Vivek",
+      "patientContact": "8989898989",
+      "docName": "Raghav",
+      "docSpecial": "Cardiology",
+      "appoinmnetDate": "2020-06-10"
+    }
+  ],
+  "specializationList": [
+    {
+      "specId": "1001",
+      "specName": "Cardiology"
+    },
+    {
+      "specId": "1002",
+      "specName": "Neurology"
+    },
+    {
+      "specId": "1003",
+      "specName": "Orthopedagogy"
+    },
+    {
+      "specId": "1004",
+      "specName": "Ophthalmology"
+    },
+    {
+      "specId": "1005",
+      "specName": "Urogynecology"
+    },
+    {
+      "specId": "1006",
+      "specName": "Pulmonology"
+    },
+    {
+      "specId": "1007",
+      "specName": "Cardiology"
+    }
+  ]
+}

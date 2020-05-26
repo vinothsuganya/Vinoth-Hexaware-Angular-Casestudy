@@ -1,0 +1,66 @@
+<div class="blue-fade-banner">
+	<div class="row">
+		<div class="shadow-box col-xl-6 offset-xl-3">
+			<h4 class="mb-5 text-center">Book your Appoinment</h4>
+			<form [formGroup]="appointmentForm" (ngSubmit)="submit()">
+				<div class="form-group row">
+					<label class="col-xl-5 col-lg-6 col-sm-12 font-weight-bold col-form-label">Patient Name</label>
+					<div class="col-xl-7 col-lg-6 col-sm-12">
+						<input type="text" class="form-control" formControlName="bookPatientName" />
+						<div class="text-danger" *ngIf="appointmentForm.get('bookPatientName').touched && appointmentForm.get('bookPatientName').invalid">
+							Patient Name is required
+						</div>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-xl-5 col-lg-6 col-sm-12 font-weight-bold col-form-label">Patient Contact Number</label>
+					<div class="col-xl-7 col-lg-6 col-sm-12">
+						<input type="text" class="form-control" formControlName="bookPatientContact" />
+						<div class="text-danger" *ngIf="appointmentForm.get('bookPatientContact').touched && appointmentForm.get('bookPatientContact').invalid">
+							Patient contact number is required
+						</div>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-xl-5 col-lg-6 col-sm-12 font-weight-bold col-form-label">Specialization</label>
+					<div class="col-xl-7 col-lg-6 col-sm-12">
+						<select class="form-control" formControlName="bookSpecialization">
+							<option value="">--Select--</option>
+							<option *ngFor="let item of specializationList" value="{{item.specName}}">{{ item.specName}}</option>
+						</select>
+						<div class="text-danger" *ngIf="appointmentForm.get('bookSpecialization').touched && appointmentForm.get('bookSpecialization').invalid">
+							Patient contact number is required
+						</div>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-xl-5 col-lg-6 col-sm-12 font-weight-bold col-form-label">Doctor</label>
+					<div class="col-xl-7 col-lg-6 col-sm-12">
+						<select class="form-control" formControlName="bookDoctor">
+							<option value="">--Select--</option>
+							<option *ngFor="let item of doctorList" value="{{item.docName}}">{{ item.docName}}</option>
+						</select>
+						<div class="text-danger" *ngIf="appointmentForm.get('bookDoctor').touched && appointmentForm.get('bookDoctor').invalid">
+							Doctor is required
+						</div>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-xl-5 col-lg-6 col-sm-12 font-weight-bold col-form-label">Available Date</label>
+					<div class="col-xl-7 col-lg-6 col-sm-12">
+						<input class="form-control" type="date" formControlName="bookDate">
+						<div class="text-danger" *ngIf="appointmentForm.get('bookDate').touched && appointmentForm.get('bookDate').invalid">
+							Available date is required
+						</div>
+					</div>
+				</div>
+				<div class="form-group row mb-0" [ngStyle]="{'display':appointmentForm.valid?'flex':'none'}">
+					<label class="col-xl-5 col-lg-6 col-sm-12 font-weight-bold col-form-label">&nbsp;</label>
+					<div class="col-xl-7 col-lg-6 col-sm-12">
+						<input class="btn btn-lg btn-primary" type="submit" value="Book Appointment" />
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

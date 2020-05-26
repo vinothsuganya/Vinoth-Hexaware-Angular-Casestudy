@@ -1,0 +1,15 @@
+<div class="blue-fade-banner">
+	<div class="appt-center mt-5">
+		<div class="shadow-box">
+			<h6 class="mb-2">Search your appoinment</h6>
+			<form class="form-inline" [formGroup]="appotCheckForm" (ngSubmit)="submit()">
+				<label class="sr-only fon-weight-bold">Your Contact Number</label>
+				<input type="text" class="form-control" formControlName="appointContact" />
+				<input type="submit" class="btn btn-primary ml-2" value="Search" />
+				<div class="text-danger" *ngIf="appotCheckForm.get('appointContact').touched && appotCheckForm.get('appointContact').invalid">
+					Contact Number is required
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

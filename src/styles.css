@@ -1,0 +1,90 @@
+/* You can add global styles to this file, and also import other style files */
+.page-sub-heading {
+    text-align: center;
+	color: #257ba2;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+}
+.navbar-dark .navbar-brand {
+	color: #fff;
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-shadow: -2px 1px #333333;
+}
+.navbar-dark .navbar-nav .nav-item {
+	margin-left: 10px;
+}
+.navbar-dark .navbar-nav .nav-item:first-child {
+	margin-left: 0px;
+}
+.navbar-dark .navbar-nav .nav-item>.nav-link {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.navbar-dark .navbar-nav .nav-item.active>.nav-link,
+.navbar-dark .navbar-nav .nav-item:focus>.nav-link,
+.navbar-dark .navbar-nav .nav-item:hover>.nav-link {
+	background: #ffffff;
+	box-shadow: 2px 1px #999999;
+	border-radius: 4px;
+	color: #333333;
+}
+.appt-center {
+    width: 380px;
+    margin: 0 auto;
+}
+input[type="text"], input[type="submit"], select {
+	border-radius: 0 !important;
+}
+.ng-invalid + div {
+	color: red;
+}
+.blue-fade-banner {
+    background-color: #aed9e8;
+	background-image: linear-gradient(to right, #afd9e6, #ffffff, #aed9e8, #ffffff, #afd9e6);
+    width: 100%;
+    height: calc(100vh - 69px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px 50px;
+}
+.btn-primary {
+	border: 1px solid #00BFC3;
+	background: #00bffe;
+	font-weight: 600;
+}
+.shadow-box {
+    background: #ffffff;
+    display: inline-block;
+    padding: 30px 40px;
+    box-shadow: 2px 1px #999999;
+    border-radius: 5px;
+}
+.footer-bottom {
+	position: absolute; 
+	bottom:0;
+	right:0;
+	background: #ffffff;
+    display: inline-block;
+    padding: 30px 40px;
+    box-shadow: -3px -2px #999999;
+    border-radius: 10px;
+}
+table {
+	border: 1px solid #257ba2;
+	background-color: #c1fbfd;
+	border-collapse: collapse;
+}
+table thead tr th, table tbody tr td {
+	border: 1px solid #257ba2;
+	padding: 10px 15px;
+}
+table thead tr th {
+	color: #ffffff;
+	background-color: #007bff;
+}
+table tbody tr:nth-child(even) {
+	background-color: #d2e7ea;	
+}

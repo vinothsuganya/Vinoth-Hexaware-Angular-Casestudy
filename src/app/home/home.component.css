@@ -1,0 +1,56 @@
+.home-banner {
+    background-image: url(../../assets/img/Doctor-hands.jpg);
+    width: 100%;
+    height: calc(100vh - 69px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px 50px;
+}
+.home-banner-box {
+    background: #ffffff;
+    display: inline-block;
+    padding: 20px 40px 50px;
+    box-shadow: 2px 1px #999999;
+    border-radius: 25px;
+    margin-top: 10%;
+}
+.home-banner h1 {
+	font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.home-banner span {
+	font-size: 18px;
+}
+.home-banner p {
+    margin: 0;
+    font-size: 18px;
+}
+.nav-link {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-link li {
+    margin-top: 40px;
+}
+.nav-link li:first-child {
+    margin-top: 0px;;
+}
+.nav-link li a {
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: #aed8e4;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #333333;
+    box-shadow: 3px 3px #333333;
+    -moz-box-shadow: 3px 3px #333333;
+    -webkit-box-shadow: 3px 3px #333333;
+}
+.nav-link li a:hover,
+.nav-link li a:focus {
+    background-color: #516b94;
+    color: #ffffff;
+}

@@ -1,0 +1,32 @@
+<div class="footer-bottom">
+	<h6 class="text-primary">Angular 8 Design & Developed By,</h6>
+	<h6>Name: Vinoth K</h6>
+	<h6>EMP ID : 37327</h6>
+	<h6 class="mb-0">Seniour UI Developer</h6>
+</div>
+<nav class="navbar navbar-dark bg-primary navbar-expand-lg">
+	<a class="navbar-brand" routerLink="/home">{{title}}</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse">	
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+				<a class="nav-link" routerLink="/home">Home</a>
+			</li>
+			<li class="nav-item" routerLinkActive="active">
+				<a class="nav-link" routerLink="/viewdocs">Our Doctors</a>
+			</li>
+			<li class="nav-item" routerLinkActive="active">
+				<a class="nav-link" routerLink="/viewspec">Our Specializations</a>
+			</li>
+			<li class="nav-item" routerLinkActive="active">
+				<a class="nav-link" routerLink="/appointCheck">Your Appoinments</a>
+			</li>
+			<li class="nav-item" routerLinkActive="active">
+				<a class="nav-link" routerLink="/bookapt">Book Your Appoinments</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+<router-outlet></router-outlet>

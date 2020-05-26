@@ -1,0 +1,17 @@
+<div class="blue-fade-banner">
+    <h4 class="page-sub-heading mb-4 text-blue">Our Specializations</h4>
+	<table align="center" cellpadding="0" cellspacing="0">
+		<thead>
+			<tr>
+				<th>Specialization ID</th>
+				<th>Specialization Name</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let spec of specialistSev">
+				<td>{{spec.specId}}</td>
+				<td>{{spec.specName}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
